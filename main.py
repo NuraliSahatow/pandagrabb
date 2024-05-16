@@ -82,7 +82,7 @@ def job():
     main()
 
 # Планирование задачи каждые 1 час
-schedule.every(1).minutes.do(job)
+schedule.every(1).hours.do(job)
 
 # Функция для запуска планировщика в отдельном потоке
 def run_schedule():
